@@ -3,7 +3,8 @@ import connectDB from "../../middleware/mongoose";
 
 const handler = async (req, res) => {
     if(req.method == "POST"){
-        const {subject, currentLevel, goal, days, strengths, weaknesses} = req.body;
+        const user = req.body.user;
+        const { subject, currentLevel, goal, days, strengths, weaknesses} = req.body;
         try{
             await UserInfo.findOneAndUpdate({email: user.email}, {subject: subject, currentLevel: currentLevel, goal: goal, days:days, strengths:strengths, weaknesses: weaknesses});
             res.status(200).json({ success: true });

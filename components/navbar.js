@@ -32,6 +32,7 @@ const Navbar = ({user}) => {
                     <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
                         <Link href={"/"} className="mr-5 hover:text-gray-900">Home</Link>
                         <Link href={"/prequiz"} className="mr-5 hover:text-gray-900">PreQuiz</Link>
+                        <Link href={"/dashboard"} className="mr-5 hover:text-gray-900">Dashboard</Link>
                         <Link href={"/myprofile"} className="mr-5 hover:text-gray-900">My Profile</Link>
                         <Link href={"/session"} className="mr-5 hover:text-gray-900">Get Session</Link>
                     </nav>

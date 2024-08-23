@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import { useRouter } from 'next/router';
+import React, {useState, useEffect} from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -12,6 +13,15 @@ const Input = ({user}) => {
   const [goal, setGoal] = useState('');
   const [days, setDays] = useState('');
 
+  const router = useRouter()
+
+  useEffect(() => {
+    if (!localStorage.getItem("myuser")) {
+      router.push("/");
+    }
+  
+  }, [router])
+  
 
   const handleChange = (e) =>{
     if(e.target.name == "subject"){
@@ -40,7 +50,7 @@ const Input = ({user}) => {
         });
     }
     let data = {user: user, subject: subject, currentLevel: currentLevel, goal: goal, days: days, weaknesses: weaknesses, strengths: strengths};
-      let a = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/getinfo`, {
+      let a = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/userinfo`, {
         method: "POST", // or 'PUT'
         headers: {
           "Content-Type": "application/json",
@@ -95,7 +105,7 @@ const Input = ({user}) => {
             <option>Aptitude</option>
             <option>DSA</option>
             <option>OOPS</option>
-            <option>Computer Networks</option>
+            <option>Computer Science</option>
           </select>
         </div>
 
