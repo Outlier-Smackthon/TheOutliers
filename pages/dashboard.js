@@ -12,6 +12,7 @@ import {
 import PathwayToLearn from '../components/pathway'; // Ensure the path is correct
 import Mentoring from '../components/mentoring'; // Ensure the path is correct
 import { useRouter } from 'next/router';
+import {parseDate} from "@internationalized/date";
 
 
 
@@ -46,6 +47,7 @@ const Dashboard = ({user}) => {
   const router = useRouter();
   const [profile, setProfile] = useState({ name: '', subject: '' });
     const [score, setScore] = useState('')
+    let [value, setValue] = React.useState(parseDate("2024-08-03"));
     useEffect(() => {
         if (!localStorage.getItem("myuser")) {
           router.push("/");
@@ -100,7 +102,7 @@ const Dashboard = ({user}) => {
   return (
     <div className="flex h-screen">
       {/* Left Sidebar Section */}
-      <div className="w-1/5 bg-gray-900 text-white p-4">
+      <div className="w-1/5 bg-gray-900 text-white p-4 mt-5 mb-7 rounded-xl">
         <ul>
           <li
             className={`cursor-pointer py-2 ${
@@ -206,13 +208,6 @@ const Dashboard = ({user}) => {
 
               {/* Another Chart or Widget */}
               <div className="col-span-1">
-                <Card
-                  title="Another Widget or Chart"
-                  gradient="from-gray-500 to-blue-500"
-                >
-                  {/* Add additional content or chart here */}
-                  <p>Content goes here</p>
-                </Card>
               </div>
             </div>
           </>
