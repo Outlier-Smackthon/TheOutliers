@@ -21,19 +21,17 @@ const Navbar = ({user}) => {
     
 
     return (
-        <div className="">
+        <div className="mb-3">
 
             <header className="text-gray-600 body-font">
                 <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                     <Link href={"/"} className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                        {/* <svg xmlns="/guruicon.png" fill="none" stroke="currentColor" strokeLineCap="round" strokeLineJoin="round" strokeWidth="2" className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                        </svg> */}
                         <Image src="/guruicon.png" width={50} height={50} alt="Gurukul"></Image>
                         <span className="ml-3 text-xl">Gurukul</span>
                     </Link>
                     <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
                         <Link href={"/"} className="mr-5 hover:text-gray-900">Home</Link>
+                        <Link href={"/prequiz"} className="mr-5 hover:text-gray-900">PreQuiz</Link>
                         <Link href={"/myprofile"} className="mr-5 hover:text-gray-900">My Profile</Link>
                         <Link href={"/session"} className="mr-5 hover:text-gray-900">Get Session</Link>
                     </nav>

@@ -155,9 +155,9 @@ const Myaccount = ({ user }) => {
           draggable
           pauseOnHover
           theme="light"/>
-      <h1 className="my-8 text-xl text-center font-bold">My Account</h1>
+      <h1 className="my-8 text-xl text-center font-bold">My Profile</h1>
       <h2 className="mx-auto w-3/4 text-lg font-semibold mb-4">
-        1. Delivery Details
+        1. Personal Details
       </h2>
       <div className="mx-auto w-3/4 md:flex md:space-x-2">
         <div className="mb-4 w-full">
