@@ -1,0 +1,115 @@
+{
+    "Moderate_Computer_Science_MCQ_Questions": [
+      {
+        "question_id": 1,
+        "question_text": "What is the role of a scheduler in an operating system?",
+        "choices": [
+          "To manage process execution",
+          "To control memory allocation",
+          "To handle file operations",
+          "To manage network connections"
+        ],
+        "correct_answer": "To manage process execution"
+      },
+      {
+        "question_id": 2,
+        "question_text": "Which protocol is used to assign IP addresses automatically in a network?",
+        "choices": [
+          "DHCP",
+          "DNS",
+          "HTTP",
+          "FTP"
+        ],
+        "correct_answer": "DHCP"
+      },
+      {
+        "question_id": 3,
+        "question_text": "What is a deadlock in operating systems?",
+        "choices": [
+          "A situation where processes are waiting indefinitely for resources",
+          "A process that is terminated by the operating system",
+          "A file that cannot be deleted",
+          "A hardware malfunction"
+        ],
+        "correct_answer": "A situation where processes are waiting indefinitely for resources"
+      },
+      {
+        "question_id": 4,
+        "question_text": "Which SQL command is used to remove a table from a database?",
+        "choices": [
+          "DROP",
+          "DELETE",
+          "REMOVE",
+          "ALTER"
+        ],
+        "correct_answer": "DROP"
+      },
+      {
+        "question_id": 5,
+        "question_text": "What does DNS stand for in networking?",
+        "choices": [
+          "Domain Name System",
+          "Data Network Service",
+          "Digital Network System",
+          "Dynamic Name Server"
+        ],
+        "correct_answer": "Domain Name System"
+      },
+      {
+        "question_id": 6,
+        "question_text": "What is the difference between TCP and UDP?",
+        "choices": [
+          "TCP is connection-oriented, while UDP is connectionless",
+          "TCP is faster than UDP",
+          "UDP is more reliable than TCP",
+          "TCP operates at the network layer, while UDP operates at the transport layer"
+        ],
+        "correct_answer": "TCP is connection-oriented, while UDP is connectionless"
+      },
+      {
+        "question_id": 7,
+        "question_text": "In a relational database, what is a foreign key?",
+        "choices": [
+          "A key that uniquely identifies a record in another table",
+          "A key that uniquely identifies a record within the same table",
+          "A key that has duplicate values",
+          "A key that cannot be null"
+        ],
+        "correct_answer": "A key that uniquely identifies a record in another table"
+      },
+      {
+        "question_id": 8,
+        "question_text": "Which of the following is an example of a network topology?",
+        "choices": [
+          "Star",
+          "TCP",
+          "Firewall",
+          "DNS"
+        ],
+        "correct_answer": "Star"
+      },
+      {
+        "question_id": 9,
+        "question_text": "What is a virtual memory in operating systems?",
+        "choices": [
+          "A technique that uses disk space to simulate additional RAM",
+          "A memory that exists on the network",
+          "A temporary storage area for running applications",
+          "A special type of cache memory"
+        ],
+        "correct_answer": "A technique that uses disk space to simulate additional RAM"
+      },
+      {
+        "question_id": 10,
+        "question_text": "Which command is used to modify existing records in a database in SQL?",
+        "choices": [
+          "UPDATE",
+          "INSERT",
+          "DELETE",
+          "CREATE"
+        ],
+        "correct_answer": "UPDATE"
+      }
+    ]
+  }
+  

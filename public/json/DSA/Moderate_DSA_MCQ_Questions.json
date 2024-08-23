@@ -1,0 +1,114 @@
+{
+    "Moderate_DSA_MCQ_Questions": [
+        {
+            "question_id": 1,
+            "question_text": "What is the time complexity of merge sort in the worst case?",
+            "choices": [
+                "O(n)",
+                "O(n log n)",
+                "O(n^2)",
+                "O(log n)"
+            ],
+            "correct_answer": "O(n log n)"
+        },
+        {
+            "question_id": 2,
+            "question_text": "Which data structure is used for Depth-First Search (DFS) in a graph?",
+            "choices": [
+                "Stack",
+                "Queue",
+                "Heap",
+                "Array"
+            ],
+            "correct_answer": "Stack"
+        },
+        {
+            "question_id": 3,
+            "question_text": "What is the height of a balanced binary tree with n nodes?",
+            "choices": [
+                "O(log n)",
+                "O(n)",
+                "O(n log n)",
+                "O(1)"
+            ],
+            "correct_answer": "O(log n)"
+        },
+        {
+            "question_id": 4,
+            "question_text": "Which algorithm is used to find the shortest path in an unweighted graph?",
+            "choices": [
+                "Dijkstra's Algorithm",
+                "Bellman-Ford Algorithm",
+                "Breadth-First Search (BFS)",
+                "Depth-First Search (DFS)"
+            ],
+            "correct_answer": "Breadth-First Search (BFS)"
+        },
+        {
+            "question_id": 5,
+            "question_text": "Which data structure is used in implementing the LRU (Least Recently Used) cache?",
+            "choices": [
+                "Stack",
+                "Queue",
+                "HashMap + Doubly Linked List",
+                "Array"
+            ],
+            "correct_answer": "HashMap + Doubly Linked List"
+        },
+        {
+            "question_id": 6,
+            "question_text": "Which of the following problems can be solved using dynamic programming?",
+            "choices": [
+                "Travelling Salesman Problem",
+                "Binary Search",
+                "Quick Sort",
+                "Breadth-First Search"
+            ],
+            "correct_answer": "Travelling Salesman Problem"
+        },
+        {
+            "question_id": 7,
+            "question_text": "Which data structure is used for priority scheduling in operating systems?",
+            "choices": [
+                "Queue",
+                "Stack",
+                "Priority Queue",
+                "Tree"
+            ],
+            "correct_answer": "Priority Queue"
+        },
+        {
+            "question_id": 8,
+            "question_text": "What is the in-order traversal of a binary search tree?",
+            "choices": [
+                "Left, Root, Right",
+                "Right, Root, Left",
+                "Root, Left, Right",
+                "Left, Right, Root"
+            ],
+            "correct_answer": "Left, Root, Right"
+        },
+        {
+            "question_id": 9,
+            "question_text": "In which case is a hash function considered good?",
+            "choices": [
+                "When it causes many collisions",
+                "When it distributes keys uniformly",
+                "When it is complex",
+                "When it is slow"
+            ],
+            "correct_answer": "When it distributes keys uniformly"
+        },
+        {
+            "question_id": 10,
+            "question_text": "What is the advantage of using a linked list over an array?",
+            "choices": [
+                "Constant-time access to elements",
+                "Fixed size",
+                "Dynamic size",
+                "Random access"
+            ],
+            "correct_answer": "Dynamic size"
+        }
+    ]
+}

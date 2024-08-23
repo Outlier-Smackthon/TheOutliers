@@ -1,0 +1,114 @@
+{
+    "Beginner_OOP_MCQ_Questions": [
+        {
+            "question_id": 1,
+            "question_text": "What is a class in object-oriented programming?",
+            "choices": [
+                "A blueprint for creating objects",
+                "An instance of an object",
+                "A type of variable",
+                "A method inside an object"
+            ],
+            "correct_answer": "A blueprint for creating objects"
+        },
+        {
+            "question_id": 2,
+            "question_text": "Which of the following is an example of polymorphism?",
+            "choices": [
+                "A function that can take multiple forms",
+                "A class that can inherit from multiple classes",
+                "An object that contains multiple data types",
+                "A variable that can change its type"
+            ],
+            "correct_answer": "A function that can take multiple forms"
+        },
+        {
+            "question_id": 3,
+            "question_text": "What does encapsulation in OOP refer to?",
+            "choices": [
+                "The bundling of data and methods that operate on the data within a single unit",
+                "The inheritance of methods and properties from a parent class",
+                "The ability to define multiple methods with the same name",
+                "The division of a program into different functions"
+            ],
+            "correct_answer": "The bundling of data and methods that operate on the data within a single unit"
+        },
+        {
+            "question_id": 4,
+            "question_text": "Which OOP principle allows a subclass to provide a specific implementation of a method that is already defined in its superclass?",
+            "choices": [
+                "Method Overriding",
+                "Method Overloading",
+                "Encapsulation",
+                "Abstraction"
+            ],
+            "correct_answer": "Method Overriding"
+        },
+        {
+            "question_id": 5,
+            "question_text": "What is the purpose of a constructor in a class?",
+            "choices": [
+                "To initialize the object's state",
+                "To create new methods",
+                "To delete an object",
+                "To inherit from another class"
+            ],
+            "correct_answer": "To initialize the object's state"
+        },
+        {
+            "question_id": 6,
+            "question_text": "Which of the following best describes inheritance in OOP?",
+            "choices": [
+                "A class can inherit attributes and methods from another class",
+                "A class can be instantiated multiple times",
+                "A class can contain multiple types of data",
+                "A class can only have one instance"
+            ],
+            "correct_answer": "A class can inherit attributes and methods from another class"
+        },
+        {
+            "question_id": 7,
+            "question_text": "What is an object in OOP?",
+            "choices": [
+                "An instance of a class",
+                "A blueprint for a class",
+                "A variable",
+                "A function"
+            ],
+            "correct_answer": "An instance of a class"
+        },
+        {
+            "question_id": 8,
+            "question_text": "Which keyword is used to inherit from a class in OOP?",
+            "choices": [
+                "extends",
+                "implements",
+                "inherits",
+                "derives"
+            ],
+            "correct_answer": "extends"
+        },
+        {
+            "question_id": 9,
+            "question_text": "What is the role of abstraction in OOP?",
+            "choices": [
+                "To hide the internal implementation details and show only the functionality",
+                "To define a class based on another class",
+                "To create multiple objects from a single class",
+                "To combine multiple objects into one"
+            ],
+            "correct_answer": "To hide the internal implementation details and show only the functionality"
+        },
+        {
+            "question_id": 10,
+            "question_text": "Which of the following languages is known for its strong support of OOP concepts?",
+            "choices": [
+                "Java",
+                "HTML",
+                "SQL",
+                "C"
+            ],
+            "correct_answer": "Java"
+        }
+    ]
+}

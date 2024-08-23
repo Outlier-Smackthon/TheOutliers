@@ -1,0 +1,115 @@
+{
+    "Beginner_Computer_Science_MCQ_Questions": [
+      {
+        "question_id": 1,
+        "question_text": "What is the primary purpose of an operating system?",
+        "choices": [
+          "To manage hardware resources",
+          "To browse the internet",
+          "To edit documents",
+          "To compile code"
+        ],
+        "correct_answer": "To manage hardware resources"
+      },
+      {
+        "question_id": 2,
+        "question_text": "Which of the following is a type of operating system?",
+        "choices": [
+          "Linux",
+          "HTML",
+          "Python",
+          "SQL"
+        ],
+        "correct_answer": "Linux"
+      },
+      {
+        "question_id": 3,
+        "question_text": "What is a packet in computer networks?",
+        "choices": [
+          "A collection of data transmitted over a network",
+          "A software program",
+          "A hardware device",
+          "A type of network topology"
+        ],
+        "correct_answer": "A collection of data transmitted over a network"
+      },
+      {
+        "question_id": 4,
+        "question_text": "Which of the following is a network protocol?",
+        "choices": [
+          "HTTP",
+          "URL",
+          "CSS",
+          "DOM"
+        ],
+        "correct_answer": "HTTP"
+      },
+      {
+        "question_id": 5,
+        "question_text": "What does SQL stand for?",
+        "choices": [
+          "Structured Query Language",
+          "Simple Query Language",
+          "Sequential Query Language",
+          "Structured Queue Language"
+        ],
+        "correct_answer": "Structured Query Language"
+      },
+      {
+        "question_id": 6,
+        "question_text": "Which command is used to retrieve data from a database in SQL?",
+        "choices": [
+          "SELECT",
+          "INSERT",
+          "DELETE",
+          "UPDATE"
+        ],
+        "correct_answer": "SELECT"
+      },
+      {
+        "question_id": 7,
+        "question_text": "What is a primary key in a database?",
+        "choices": [
+          "A unique identifier for a record",
+          "A key that can have null values",
+          "A key that is not unique",
+          "A foreign key"
+        ],
+        "correct_answer": "A unique identifier for a record"
+      },
+      {
+        "question_id": 8,
+        "question_text": "Which of the following is an example of an application layer protocol?",
+        "choices": [
+          "FTP",
+          "IP",
+          "Ethernet",
+          "TCP"
+        ],
+        "correct_answer": "FTP"
+      },
+      {
+        "question_id": 9,
+        "question_text": "What does CPU stand for?",
+        "choices": [
+          "Central Processing Unit",
+          "Central Peripheral Unit",
+          "Control Processing Unit",
+          "Computer Processing Unit"
+        ],
+        "correct_answer": "Central Processing Unit"
+      },
+      {
+        "question_id": 10,
+        "question_text": "Which database model organizes data in a tree-like structure?",
+        "choices": [
+          "Hierarchical model",
+          "Relational model",
+          "Network model",
+          "Object-oriented model"
+        ],
+        "correct_answer": "Hierarchical model"
+      }
+    ]
+  }
+  

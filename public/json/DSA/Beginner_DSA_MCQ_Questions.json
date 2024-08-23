@@ -1,0 +1,114 @@
+{
+    "Beginner_DSA_MCQ_Questions": [
+        {
+            "question_id": 1,
+            "question_text": "What is the best case time complexity of bubble sort?",
+            "choices": [
+                "O(n)",
+                "O(n^2)",
+                "O(log n)",
+                "O(1)"
+            ],
+            "correct_answer": "O(n)"
+        },
+        {
+            "question_id": 2,
+            "question_text": "Which data structure uses FIFO (First In First Out) principle?",
+            "choices": [
+                "Stack",
+                "Queue",
+                "Heap",
+                "Graph"
+            ],
+            "correct_answer": "Queue"
+        },
+        {
+            "question_id": 3,
+            "question_text": "What is the time complexity of searching an element in an unsorted array?",
+            "choices": [
+                "O(n)",
+                "O(log n)",
+                "O(n^2)",
+                "O(1)"
+            ],
+            "correct_answer": "O(n)"
+        },
+        {
+            "question_id": 4,
+            "question_text": "Which of the following is not a stable sorting algorithm?",
+            "choices": [
+                "Merge Sort",
+                "Bubble Sort",
+                "Heap Sort",
+                "Insertion Sort"
+            ],
+            "correct_answer": "Heap Sort"
+        },
+        {
+            "question_id": 5,
+            "question_text": "Which data structure is used to implement the undo feature in text editors?",
+            "choices": [
+                "Queue",
+                "Stack",
+                "Hash Table",
+                "Graph"
+            ],
+            "correct_answer": "Stack"
+        },
+        {
+            "question_id": 6,
+            "question_text": "Which of the following is a self-balancing binary search tree?",
+            "choices": [
+                "AVL Tree",
+                "Binary Tree",
+                "Heap",
+                "B Tree"
+            ],
+            "correct_answer": "AVL Tree"
+        },
+        {
+            "question_id": 7,
+            "question_text": "In a max heap, the root node contains the:",
+            "choices": [
+                "Minimum element",
+                "Maximum element",
+                "Middle element",
+                "None of the above"
+            ],
+            "correct_answer": "Maximum element"
+        },
+        {
+            "question_id": 8,
+            "question_text": "Which of the following is used to traverse a graph?",
+            "choices": [
+                "Stack",
+                "Queue",
+                "Heap",
+                "Array"
+            ],
+            "correct_answer": "Queue"
+        },
+        {
+            "question_id": 9,
+            "question_text": "What is the time complexity of inserting an element at the beginning of an array?",
+            "choices": [
+                "O(1)",
+                "O(n)",
+                "O(log n)",
+                "O(n log n)"
+            ],
+            "correct_answer": "O(n)"
+        },
+        {
+            "question_id": 10,
+            "question_text": "Which of the following is an example of a linear data structure?",
+            "choices": [
+                "Graph",
+                "Tree",
+                "Queue",
+                "Hash Table"
+            ],
+            "correct_answer": "Queue"
+        }
+    ]
+}

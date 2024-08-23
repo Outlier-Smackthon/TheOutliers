@@ -71,6 +71,7 @@ const Dashboard = ({user}) => {
               }
               setProfile({name: a.name, subject: a.subject})
         }
+        getData();
       
       }, [router, user])
 
@@ -103,7 +104,7 @@ const Dashboard = ({user}) => {
           }
         >
           <p className="mb-2">Name: {profile.name}</p>
-          <p>Role: {profile.role}</p>
+          <p>Subject: {profile.subject}</p>
         </Card>
 
         {/* Initial Assessment Card */}

@@ -1,0 +1,115 @@
+{
+    "Expert_Computer_Science_MCQ_Questions": [
+      {
+        "question_id": 1,
+        "question_text": "What is the purpose of the ARP protocol in computer networks?",
+        "choices": [
+          "To map IP addresses to MAC addresses",
+          "To assign dynamic IP addresses",
+          "To route data packets across networks",
+          "To encrypt network communications"
+        ],
+        "correct_answer": "To map IP addresses to MAC addresses"
+      },
+      {
+        "question_id": 2,
+        "question_text": "Which database normalization form removes partial dependencies?",
+        "choices": [
+          "Second Normal Form (2NF)",
+          "First Normal Form (1NF)",
+          "Third Normal Form (3NF)",
+          "Boyce-Codd Normal Form (BCNF)"
+        ],
+        "correct_answer": "Second Normal Form (2NF)"
+      },
+      {
+        "question_id": 3,
+        "question_text": "In an operating system, what is a 'race condition'?",
+        "choices": [
+          "A situation where multiple processes access shared resources simultaneously",
+          "A process that is in a waiting state",
+          "A type of deadlock that occurs in distributed systems",
+          "A situation where a process runs faster than expected"
+        ],
+        "correct_answer": "A situation where multiple processes access shared resources simultaneously"
+      },
+      {
+        "question_id": 4,
+        "question_text": "Which SQL clause is used to filter records in a query result based on a specified condition?",
+        "choices": [
+          "WHERE",
+          "GROUP BY",
+          "ORDER BY",
+          "HAVING"
+        ],
+        "correct_answer": "WHERE"
+      },
+      {
+        "question_id": 5,
+        "question_text": "Which routing algorithm is used by OSPF (Open Shortest Path First)?",
+        "choices": [
+          "Link-state routing",
+          "Distance-vector routing",
+          "Path-vector routing",
+          "Hybrid routing"
+        ],
+        "correct_answer": "Link-state routing"
+      },
+      {
+        "question_id": 6,
+        "question_text": "What is the main advantage of using RAID 5 in storage systems?",
+        "choices": [
+          "It provides data redundancy and improved performance",
+          "It is the cheapest RAID configuration",
+          "It is the fastest RAID level",
+          "It does not require any disk space for parity"
+        ],
+        "correct_answer": "It provides data redundancy and improved performance"
+      },
+      {
+        "question_id": 7,
+        "question_text": "In a database, what is a 'view'?",
+        "choices": [
+          "A virtual table based on the result of an SQL query",
+          "A physical table stored in the database",
+          "A backup of a database table",
+          "A transaction log of database operations"
+        ],
+        "correct_answer": "A virtual table based on the result of an SQL query"
+      },
+      {
+        "question_id": 8,
+        "question_text": "Which of the following is true about a 'deadlock' in operating systems?",
+        "choices": [
+          "It occurs when a set of processes are blocked because each process is holding a resource and waiting for another",
+          "It is a condition where a process is in an infinite loop",
+          "It is the result of a memory leak in an operating system",
+          "It can be easily detected and resolved without any system interruption"
+        ],
+        "correct_answer": "It occurs when a set of processes are blocked because each process is holding a resource and waiting for another"
+      },
+      {
+        "question_id": 9,
+        "question_text": "What is the primary function of a 'firewall' in a network?",
+        "choices": [
+          "To monitor and control incoming and outgoing network traffic",
+          "To encrypt data for secure transmission",
+          "To optimize network performance",
+          "To distribute network traffic evenly across multiple servers"
+        ],
+        "correct_answer": "To monitor and control incoming and outgoing network traffic"
+      },
+      {
+        "question_id": 10,
+        "question_text": "Which technique is used in databases to ensure that transactions are processed reliably?",
+        "choices": [
+          "ACID properties",
+          "Normalization",
+          "Indexing",
+          "Sharding"
+        ],
+        "correct_answer": "ACID properties"
+      }
+    ]
+  }
+  

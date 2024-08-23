@@ -1,0 +1,60 @@
+{
+    "Expert_Aptitude_MCQ_Questions": [
+      {
+        "question_id": 1,
+        "question_text": "A tank is filled by three pipes A, B, and C. A fills the tank in 4 hours, B in 6 hours, and C in 8 hours. If all the pipes are opened together, how long will it take to fill the tank?",
+        "choices": [
+          "1 hour 36 minutes",
+          "2 hours",
+          "2 hours 24 minutes",
+          "3 hours"
+        ],
+        "correct_answer": "2 hours 24 minutes"
+      },
+      {
+        "question_id": 2,
+        "question_text": "A man can row 9 km/h in still water. If the speed of the current is 3 km/h, how long will it take him to row 12 km upstream?",
+        "choices": [
+          "2 hours",
+          "2.5 hours",
+          "3 hours",
+          "4 hours"
+        ],
+        "correct_answer": "3 hours"
+      },
+      {
+        "question_id": 3,
+        "question_text": "A sum of money amounts to $3,600 after 2 years at 10% compound interest per annum. What was the principal amount?",
+        "choices": [
+          "$2,975",
+          "$3,000",
+          "$3,200",
+          "$3,500"
+        ],
+        "correct_answer": "$3,000"
+      },
+      {
+        "question_id": 4,
+        "question_text": "In how many different ways can the letters of the word 'PERMUTATION' be arranged?",
+        "choices": [
+          "1,663,200",
+          "1,813,600",
+          "1,818,000",
+          "1,889,600"
+        ],
+        "correct_answer": "1,663,200"
+      },
+      {
+        "question_id": 5,
+        "question_text": "If the ratio of the ages of two persons is 4:5 and the sum of their ages is 45 years, what will be their respective ages after 5 years?",
+        "choices": [
+          "20 and 25 years",
+          "25 and 30 years",
+          "30 and 35 years",
+          "35 and 40 years"
+        ],
+        "correct_answer": "25 and 30 years"
+      }
+    ]
+  }
+  

@@ -1,0 +1,114 @@
+{
+    "Expert_OOP_MCQ_Questions": [
+        {
+            "question_id": 1,
+            "question_text": "Which design pattern is used to separate the construction of a complex object from its representation?",
+            "choices": [
+                "Builder Pattern",
+                "Factory Pattern",
+                "Adapter Pattern",
+                "Strategy Pattern"
+            ],
+            "correct_answer": "Builder Pattern"
+        },
+        {
+            "question_id": 2,
+            "question_text": "What is the difference between the Observer and Mediator design patterns?",
+            "choices": [
+                "Observer pattern is used for loose coupling, while Mediator pattern is used for tight coupling.",
+                "Observer pattern defines a one-to-many dependency, while Mediator centralizes complex communication.",
+                "Observer pattern is used for multiple inheritance, while Mediator is not.",
+                "Observer pattern is used in MVC architecture, while Mediator is not."
+            ],
+            "correct_answer": "Observer pattern defines a one-to-many dependency, while Mediator centralizes complex communication."
+        },
+        {
+            "question_id": 3,
+            "question_text": "What is the main advantage of using the Factory Method pattern?",
+            "choices": [
+                "It allows for the creation of objects without specifying the exact class of the object.",
+                "It enhances the performance of object creation.",
+                "It allows multiple constructors for a single class.",
+                "It is used to clone objects."
+            ],
+            "correct_answer": "It allows for the creation of objects without specifying the exact class of the object."
+        },
+        {
+            "question_id": 4,
+            "question_text": "Which of the following is an example of the 'Open/Closed Principle'?",
+            "choices": [
+                "A class is open for extension but closed for modification.",
+                "A class is open for modification but closed for extension.",
+                "A class can be both extended and modified freely.",
+                "A class cannot be extended or modified."
+            ],
+            "correct_answer": "A class is open for extension but closed for modification."
+        },
+        {
+            "question_id": 5,
+            "question_text": "In which scenario would you use the Composite design pattern?",
+            "choices": [
+                "When you need to allow individual objects and compositions of objects to be treated uniformly",
+                "When you need to provide a simplified interface to a complex system",
+                "When you need to enforce a single instance of a class",
+                "When you need to add behaviors to objects dynamically"
+            ],
+            "correct_answer": "When you need to allow individual objects and compositions of objects to be treated uniformly"
+        },
+        {
+            "question_id": 6,
+            "question_text": "Which design pattern provides a way to access elements of a collection sequentially without exposing the underlying representation?",
+            "choices": [
+                "Iterator Pattern",
+                "Visitor Pattern",
+                "Decorator Pattern",
+                "Flyweight Pattern"
+            ],
+            "correct_answer": "Iterator Pattern"
+        },
+        {
+            "question_id": 7,
+            "question_text": "What is the primary purpose of the Decorator design pattern?",
+            "choices": [
+                "To add new responsibilities to an object dynamically",
+                "To ensure a class has only one instance",
+                "To define a family of algorithms and make them interchangeable",
+                "To decouple an abstraction from its implementation"
+            ],
+            "correct_answer": "To add new responsibilities to an object dynamically"
+        },
+        {
+            "question_id": 8,
+            "question_text": "Which design pattern is used to decouple an abstraction from its implementation so that the two can vary independently?",
+            "choices": [
+                "Bridge Pattern",
+                "Adapter Pattern",
+                "Proxy Pattern",
+                "Strategy Pattern"
+            ],
+            "correct_answer": "Bridge Pattern"
+        },
+        {
+            "question_id": 9,
+            "question_text": "What is the role of the 'Proxy' design pattern?",
+            "choices": [
+                "To control access to an object, allowing some operations to be deferred",
+                "To create objects by cloning an existing object",
+                "To provide a simplified interface to a complex subsystem",
+                "To allow incompatible interfaces to work together"
+            ],
+            "correct_answer": "To control access to an object, allowing some operations to be deferred"
+        },
+        {
+            "question_id": 10,
+            "question_text": "Which pattern is often used to provide a way to notify multiple objects about changes to a specific state?",
+            "choices": [
+                "Observer Pattern",
+                "Command Pattern",
+                "State Pattern",
+                "Chain of Responsibility Pattern"
+            ],
+            "correct_answer": "Observer Pattern"
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "Moderate_Aptitude_MCQ_Questions": [
+      {
+        "question_id": 1,
+        "question_text": "A car travels 150 km in 3 hours. What is its average speed?",
+        "choices": [
+          "30 km/h",
+          "40 km/h",
+          "50 km/h",
+          "60 km/h"
+        ],
+        "correct_answer": "50 km/h"
+      },
+      {
+        "question_id": 2,
+        "question_text": "If the ratio of two numbers is 3:4 and their sum is 56, what is the smaller number?",
+        "choices": [
+          "20",
+          "21",
+          "24",
+          "28"
+        ],
+        "correct_answer": "24"
+      },
+      {
+        "question_id": 3,
+        "question_text": "A man sells an item at a loss of 10%. If the cost price was $50, what was the selling price?",
+        "choices": [
+          "$45",
+          "$46",
+          "$47",
+          "$48"
+        ],
+        "correct_answer": "$45"
+      },
+      {
+        "question_id": 4,
+        "question_text": "If the simple interest on $1,000 for 2 years is $100, what is the rate of interest per annum?",
+        "choices": [
+          "4%",
+          "5%",
+          "6%",
+          "7%"
+        ],
+        "correct_answer": "5%"
+      },
+      {
+        "question_id": 5,
+        "question_text": "Two trains are moving in opposite directions at speeds of 60 km/h and 40 km/h. How long will they take to cross each other if the length of each train is 100 meters?",
+        "choices": [
+          "6 seconds",
+          "9 seconds",
+          "12 seconds",
+          "15 seconds"
+        ],
+        "correct_answer": "6 seconds"
+      }
+    ]
+  }
+  

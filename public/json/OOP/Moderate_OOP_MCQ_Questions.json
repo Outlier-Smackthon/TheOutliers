@@ -1,0 +1,114 @@
+{
+    "Moderate_OOP_MCQ_Questions": [
+        {
+            "question_id": 1,
+            "question_text": "Which of the following is a design principle that encourages composition over inheritance?",
+            "choices": [
+                "Liskov Substitution Principle",
+                "Single Responsibility Principle",
+                "Interface Segregation Principle",
+                "Dependency Injection Principle"
+            ],
+            "correct_answer": "Dependency Injection Principle"
+        },
+        {
+            "question_id": 2,
+            "question_text": "What is the purpose of the 'final' keyword in Java?",
+            "choices": [
+                "To create a constant variable",
+                "To prevent inheritance",
+                "To prevent method overriding",
+                "All of the above"
+            ],
+            "correct_answer": "All of the above"
+        },
+        {
+            "question_id": 3,
+            "question_text": "Which OOP concept allows an object to take many forms?",
+            "choices": [
+                "Encapsulation",
+                "Inheritance",
+                "Polymorphism",
+                "Abstraction"
+            ],
+            "correct_answer": "Polymorphism"
+        },
+        {
+            "question_id": 4,
+            "question_text": "Which of the following is an advantage of using interfaces?",
+            "choices": [
+                "Allows for multiple inheritance",
+                "Reduces code redundancy",
+                "Enhances encapsulation",
+                "Improves performance"
+            ],
+            "correct_answer": "Allows for multiple inheritance"
+        },
+        {
+            "question_id": 5,
+            "question_text": "In Java, which of the following statements is true about constructors?",
+            "choices": [
+                "A constructor can be inherited",
+                "A constructor cannot be private",
+                "A constructor can be overloaded",
+                "A constructor cannot be overloaded"
+            ],
+            "correct_answer": "A constructor can be overloaded"
+        },
+        {
+            "question_id": 6,
+            "question_text": "Which OOP principle involves hiding the internal details of an object and only exposing a high-level interface?",
+            "choices": [
+                "Encapsulation",
+                "Abstraction",
+                "Polymorphism",
+                "Inheritance"
+            ],
+            "correct_answer": "Abstraction"
+        },
+        {
+            "question_id": 7,
+            "question_text": "What is method overriding?",
+            "choices": [
+                "Using the same method name with different parameters in the same class",
+                "Using the same method name with the same parameters in a subclass",
+                "Changing the return type of a method",
+                "None of the above"
+            ],
+            "correct_answer": "Using the same method name with the same parameters in a subclass"
+        },
+        {
+            "question_id": 8,
+            "question_text": "Which design pattern involves one class having only one instance?",
+            "choices": [
+                "Singleton",
+                "Factory",
+                "Observer",
+                "Adapter"
+            ],
+            "correct_answer": "Singleton"
+        },
+        {
+            "question_id": 9,
+            "question_text": "What is the key difference between an abstract class and an interface?",
+            "choices": [
+                "An abstract class can have non-abstract methods, while an interface cannot",
+                "An interface can have constructors, while an abstract class cannot",
+                "An interface supports multiple inheritance, while an abstract class does not",
+                "An abstract class cannot be inherited, while an interface can"
+            ],
+            "correct_answer": "An abstract class can have non-abstract methods, while an interface cannot"
+        },
+        {
+            "question_id": 10,
+            "question_text": "Which of the following is true about method overloading?",
+            "choices": [
+                "It occurs when two methods have the same name and parameter list",
+                "It is related to runtime polymorphism",
+                "It occurs when two methods have the same name but different parameter lists",
+                "It is related to inheritance"
+            ],
+            "correct_answer": "It occurs when two methods have the same name but different parameter lists"
+        }
+    ]
+}
