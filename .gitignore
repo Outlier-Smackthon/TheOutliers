@@ -7,15 +7,6 @@
 .yarn/install-state.gz
 
 
-#test
-/pages/*
-/components/*
-/models/*
-/middleware/*
-/public/*
-/styles/*
-
-
 # testing
 /coverage
 
