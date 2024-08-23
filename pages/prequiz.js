@@ -317,6 +317,12 @@ const Input = ({ user }) => {
       body: JSON.stringify(data),
     });
     a = await a.json();
+    const queryParams = new URLSearchParams({
+      subject,
+      currentLevel
+    }).toString();
+  
+    router.push(`/AssessmentForm?${queryParams}`);
   };
 
   const addStrength = () => {
@@ -387,8 +393,8 @@ const Input = ({ user }) => {
           >
             <option></option>
             <option>Beginner</option>
-            <option>Intermediate</option>
-            <option>Advanced</option>
+            <option>Moderate</option>
+            <option>Expert</option>
           </select>
         </div>
 

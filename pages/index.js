@@ -1,14 +1,53 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const API_KEY = 'AIzaSyAqcNNQ6YBfhUvfYoIRmQ8GgE6KwxG0umw'; // Replace with your actual API key
+
+  const genAI = new GoogleGenerativeAI(API_KEY);
+  const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+
+  const [input, setInput] = useState('');
+  const [messages, setMessages] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const predefinedPrompt = "A prompt related to a subject will be given, and in exchange, only give the answers related to that subject in short. The question is: ";
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    setLoading(true);
+    setError(null);
+
+    const userMessage = { role: 'user', text: input };
+    const updatedMessages = [...messages, userMessage];
+    setMessages(updatedMessages);
+
+    const fullPrompt = `${predefinedPrompt}${input}`;
+
+    try {
+      const result = await model.generateContent(fullPrompt);
+      const responseText = await result.response.text();
+
+      const aiMessage = { role: 'ai', text: responseText };
+      setMessages([...updatedMessages, aiMessage]);
+    } catch (error) {
+      console.error('Error:', error);
+      setError('Something went wrong. Please try again.');
+    } finally {
+      setLoading(false);
+      setInput('');
+    }
+  };
 
   const router = useRouter()
 
@@ -21,6 +60,92 @@ export default function Home() {
 
   return (
     <div>
+      <div style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: 1000 }}>
+      <div
+        onClick={() => setIsOpen(!isOpen)}
+        style={{
+          backgroundColor: '#007bff',
+          color: '#fff',
+          padding: '10px 20px',
+          borderRadius: '5px',
+          cursor: 'pointer',
+          textAlign: 'center',
+        }}
+      >
+        Chat with AI
+      </div>
+      {isOpen && (
+        <div
+          style={{
+            backgroundColor: '#fff',
+            border: '1px solid #ccc',
+            borderRadius: '10px',
+            width: '300px',
+            maxHeight: '400px',
+            overflowY: 'auto',
+            padding: '10px',
+            marginTop: '10px',
+            boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.1)',
+          }}
+        >
+          <div
+            style={{
+              border: '1px solid #ccc',
+              padding: '10px',
+              borderRadius: '10px',
+              height: '300px',
+              overflowY: 'auto',
+              marginBottom: '10px',
+            }}
+          >
+            {messages.map((message, index) => (
+              <div
+                key={index}
+                style={{
+                  marginBottom: '10px',
+                  textAlign: message.role === 'user' ? 'right' : 'left',
+                }}
+              >
+                <strong>{message.role === 'user' ? 'You' : 'AI'}:</strong> {message.text}
+              </div>
+            ))}
+            {loading && <p>Loading...</p>}
+          </div>
+          <form onSubmit={handleSubmit} style={{ display: 'flex' }}>
+            <input
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              placeholder="Enter your message"
+              style={{
+                flex: '1',
+                padding: '10px',
+                borderRadius: '5px',
+                marginRight: '10px',
+                border: '1px solid #ccc',
+              }}
+            />
+            <button
+              type="submit"
+              style={{
+                padding: '10px 20px',
+                borderRadius: '5px',
+                backgroundColor: '#007bff',
+                color: '#fff',
+                border: 'none',
+              }}
+            >
+              Send
+            </button>
+          </form>
+          {error && (
+            <div style={{ marginTop: '10px', color: 'red' }}>
+              <p>{error}</p>
+            </div>
+          )}
+        </div>
+      )}
+    </div>
     <main className={`min-h-screen`}>
       <div className="bg-black text-white py-20">
         <div className="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">

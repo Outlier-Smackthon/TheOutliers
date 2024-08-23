@@ -7,7 +7,8 @@ const userInfoSchema = new mongoose.Schema({
     strengths: {type: Array, default:''},
     weaknesses: {type: Array,  default:''},
     goal: {type: String,  default:''},
-    days: {type: Number,  default:''}
+    days: {type: Number,  default:''},
+    score: {type: Number,  default:''}
 }, {timestamps: true});
 
 

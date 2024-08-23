@@ -8,7 +8,7 @@ const handler = async (req, res) => {
         let dbuser = await User.findOne({email: req.body.user.email});
         let userinfo = await userInfo.findOne({email: req.body.user.email})
         res.status(200).json({success: true, name: dbuser.name, subject: userinfo.subject, currentLevel: userinfo.currentLevel,
-             strengths: userinfo.strengths, weaknesses: userinfo.weaknesses, goal: userinfo.goal, days: userinfo.days});
+             strengths: userinfo.strengths, weaknesses: userinfo.weaknesses, goal: userinfo.goal, days: userinfo.days, score: userinfo.score});
     }else{
         res.status(400).json({ error: false});
     }
