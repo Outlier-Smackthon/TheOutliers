@@ -1,6 +1,8 @@
 import React, {useState} from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const Input = () => {
+const Input = ({user}) => {
   const [strengths, setStrengths] = useState([]);
   const [weaknesses, setWeaknesses] = useState([]);
   const [currentStrength, setCurrentStrength] = useState('');
@@ -8,6 +10,7 @@ const Input = () => {
   const [subject, setSubject] = useState('');
   const [currentLevel, setCurrentLevel] = useState('');
   const [goal, setGoal] = useState('');
+  const [days, setDays] = useState('');
 
 
   const handleChange = (e) =>{
@@ -17,7 +20,34 @@ const Input = () => {
       setCurrentLevel(e.target.value)
     } else if(e.target.name == "goal"){
       setGoal(e.target.value)
+    } else if(e.target.name == "days"){
+      setDays(e.target.value)
     }
+  }
+
+  const handleSubmit = async (e) =>{
+    e.preventDefault()
+    if(subject == '' || currentLevel == '' || goal == '' || days == ''){
+      toast.error("Enter all the required fields!", {
+        position: "bottom-center",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
+    }
+    let data = {user: user, subject: subject, currentLevel: currentLevel, goal: goal, days: days, weaknesses: weaknesses, strengths: strengths};
+      let a = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/getinfo`, {
+        method: "POST", // or 'PUT'
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+      a = await a.json();
   }
 
   const addStrength = () => {
@@ -45,6 +75,18 @@ const Input = () => {
   return (
    
     <div className="w-3/4 mx-auto p-6 bg-white shadow-lg rounded-lg">
+       <ToastContainer
+        position="bottom-center"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
       <form className="space-y-6">
         <div>
           <label className="block text-gray-800 font-semibold">Subject</label>
@@ -59,7 +101,7 @@ const Input = () => {
 
         <div>
           <label className="block text-gray-800 font-semibold">Current Level</label>
-          <select value={currentLevel} name="currentlevel" className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-200 ease-in-out transform hover:scale-105 hover:border-blue-400 focus:scale-105">
+          <select value={currentLevel} onChange={handleChange} name="currentlevel" className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-200 ease-in-out transform hover:scale-105 hover:border-blue-400 focus:scale-105">
             <option></option>
             <option>Beginner</option>
             <option>Intermediate</option>
@@ -131,7 +173,7 @@ const Input = () => {
 
         <div>
           <label className="block text-gray-800 font-semibold">Goal</label>
-          <select value={goal} name="goal" className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-200 ease-in-out transform hover:scale-105 hover:border-blue-400 focus:scale-105">
+          <select value={goal} onChange={handleChange} name="goal" className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-200 ease-in-out transform hover:scale-105 hover:border-blue-400 focus:scale-105">
             <option></option>
             <option>Basic Idea</option>
             <option>Intermediate</option>
@@ -142,6 +184,9 @@ const Input = () => {
         <div>
           <label className="block text-gray-800 font-semibold">Days to Achieve Goal</label>
           <input
+            value={days}
+            onChange={handleChange}
+            name="days"
             type="number"
             className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-200 ease-in-out transform hover:scale-105 focus:scale-105"
           />
@@ -149,10 +194,11 @@ const Input = () => {
 
         <div>
           <button
+            onClick={handleSubmit}
             type="submit"
             className="w-full py-2 px-4 bg-blue-600 text-white rounded-md shadow-sm hover:bg-blue-700 transition duration-200 ease-in-out transform hover:scale-105"
           >
-            Submit
+            Start Assesment
           </button>
         </div>
       </form>
