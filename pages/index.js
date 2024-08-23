@@ -147,7 +147,7 @@ export default function Home() {
       )}
     </div>
     <main className={`min-h-screen`}>
-      <div className="bg-black text-white py-20">
+      <div className="bg-cyan-300 text-white py-20">
         <div className="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
           <motion.div
             className="flex flex-col w-full lg:w-1/3 justify-center items-start p-8"
@@ -168,13 +168,13 @@ export default function Home() {
             <div className="space-x-3">
             <Link
               href="/prequiz"
-              className="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent"
+              className="bg-transparent hover:bg-yellow-300 text-black hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent"
             >
               Get Started
             </Link>
             <Link
-              href="/prequiz"
-              className="bg-transparent hover:bg-yellow-300 text-yellow-300 hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent"
+              href="/dashboard"
+              className="bg-transparent hover:bg-yellow-300 text-black hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent"
             >
               Continue Learning
             </Link>

@@ -1,0 +1,92 @@
+{
+    "DSA_Courses": {
+      "Beginner": [
+        {
+          "Number": 0,
+          "Course": "Introduction to Data Structures and Algorithms",
+          "Topics": [
+            "What are Data Structures and Algorithms?",
+            "Importance of DSA in problem-solving"
+          ]
+        },
+        {
+          "Number": 1,
+          "Course": "Basic Data Structures",
+          "Topics": [
+            "Arrays",
+            "Linked Lists",
+            "Stacks",
+            "Queues",
+            "Strings"
+          ]
+        },
+        {
+          "Number": 2,
+          "Course": "Basic Algorithms",
+          "Topics": [
+            "Searching Algorithms (Linear Search, Binary Search)",
+            "Sorting Algorithms (Bubble Sort, Selection Sort, Insertion Sort)"
+          ]
+        }
+      ],
+      "Moderate": [
+        {
+          "Number": 0,
+          "Course": "Advanced Data Structures",
+          "Topics": [
+            "Trees (Binary Trees, Binary Search Trees)",
+            "Heaps",
+            "Hash Tables"
+          ]
+        },
+        {
+          "Number": 1,
+          "Course": "Graph Algorithms",
+          "Topics": [
+            "Graph Representation",
+            "Breadth-First Search (BFS)",
+            "Depth-First Search (DFS)"
+          ]
+        },
+        {
+          "Number": 2,
+          "Course": "Dynamic Programming",
+          "Topics": [
+            "Knapsack Problem",
+            "Fibonacci Sequence",
+            "Longest Common Subsequence"
+          ]
+        }
+      ],
+      "Expert": [
+        {
+          "Number": 0,
+          "Course": "Advanced Tree Data Structures",
+          "Topics": [
+            "AVL Trees",
+            "Red-Black Trees",
+            "Segment Trees"
+          ]
+        },
+        {
+          "Number": 1,
+          "Course": "Advanced Graph Algorithms",
+          "Topics": [
+            "Dijkstra's Algorithm",
+            "Floyd-Warshall Algorithm",
+            "Bellman-Ford Algorithm"
+          ]
+        },
+        {
+          "Number": 2,
+          "Course": "String Algorithms",
+          "Topics": [
+            "Knuth-Morris-Pratt (KMP) Algorithm",
+            "Rabin-Karp Algorithm",
+            "Z Algorithm"
+          ]
+        }
+      ]
+    }
+  }
+  

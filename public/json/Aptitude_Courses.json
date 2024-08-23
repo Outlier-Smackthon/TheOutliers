@@ -1,0 +1,92 @@
+{
+    "Aptitude_Courses": {
+      "Beginner": [
+        {
+          "Number": 0,
+          "Course": "Basic Arithmetic",
+          "Topics": [
+            "Addition, Subtraction, Multiplication, Division",
+            "Percentages",
+            "Ratios and Proportions"
+          ]
+        },
+        {
+          "Number": 1,
+          "Course": "Basic Algebra",
+          "Topics": [
+            "Simple Equations",
+            "Inequalities",
+            "Algebraic Expressions"
+          ]
+        },
+        {
+          "Number": 2,
+          "Course": "Basic Geometry",
+          "Topics": [
+            "Lines and Angles",
+            "Triangles and Quadrilaterals",
+            "Circles"
+          ]
+        }
+      ],
+      "Moderate": [
+        {
+          "Number": 0,
+          "Course": "Intermediate Arithmetic",
+          "Topics": [
+            "Profit and Loss",
+            "Simple and Compound Interest",
+            "Time and Work"
+          ]
+        },
+        {
+          "Number": 1,
+          "Course": "Intermediate Algebra",
+          "Topics": [
+            "Quadratic Equations",
+            "Functions",
+            "Sequences and Series"
+          ]
+        },
+        {
+          "Number": 2,
+          "Course": "Intermediate Geometry",
+          "Topics": [
+            "Coordinate Geometry",
+            "Mensuration (Area, Volume)",
+            "Trigonometry Basics"
+          ]
+        }
+      ],
+      "Expert": [
+        {
+          "Number": 0,
+          "Course": "Advanced Arithmetic",
+          "Topics": [
+            "Advanced Percentages",
+            "Probability",
+            "Permutations and Combinations"
+          ]
+        },
+        {
+          "Number": 1,
+          "Course": "Advanced Algebra",
+          "Topics": [
+            "Complex Numbers",
+            "Matrices and Determinants",
+            "Advanced Functions"
+          ]
+        },
+        {
+          "Number": 2,
+          "Course": "Advanced Geometry and Trigonometry",
+          "Topics": [
+            "Advanced Trigonometric Functions",
+            "Vectors and 3D Geometry",
+            "Advanced Mensuration"
+          ]
+        }
+      ]
+    }
+  }
+  

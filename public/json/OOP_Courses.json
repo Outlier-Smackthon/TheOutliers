@@ -1,0 +1,93 @@
+{
+    "OOP_Courses": {
+      "Beginner": [
+        {
+          "Number": 0,
+          "Course": "Introduction to Object-Oriented Programming",
+          "Topics": [
+            "What is OOP?",
+            "Basic Concepts (Classes, Objects)",
+            "Basic Principles (Encapsulation, Abstraction)"
+          ]
+        },
+        {
+          "Number": 1,
+          "Course": "Classes and Objects",
+          "Topics": [
+            "Defining Classes",
+            "Creating Objects",
+            "Constructors and Destructors"
+          ]
+        },
+        {
+          "Number": 2,
+          "Course": "Basic Principles of OOP",
+          "Topics": [
+            "Encapsulation",
+            "Abstraction",
+            "Simple Examples and Exercises"
+          ]
+        }
+      ],
+      "Moderate": [
+        {
+          "Number": 0,
+          "Course": "Inheritance and Polymorphism",
+          "Topics": [
+            "Inheritance Basics",
+            "Types of Inheritance (Single, Multiple, Multilevel)",
+            "Polymorphism (Method Overloading, Method Overriding)"
+          ]
+        },
+        {
+          "Number": 1,
+          "Course": "Advanced Class Design",
+          "Topics": [
+            "Abstract Classes",
+            "Interfaces",
+            "Composition vs. Inheritance"
+          ]
+        },
+        {
+          "Number": 2,
+          "Course": "Exception Handling and File I/O",
+          "Topics": [
+            "Exception Handling (Try, Catch, Finally)",
+            "File Input/Output Basics",
+            "Handling Files with Classes"
+          ]
+        }
+      ],
+      "Expert": [
+        {
+          "Number": 0,
+          "Course": "Design Patterns",
+          "Topics": [
+            "Introduction to Design Patterns",
+            "Creational Patterns (Singleton, Factory)",
+            "Structural Patterns (Adapter, Decorator)",
+            "Behavioral Patterns (Observer, Strategy)"
+          ]
+        },
+        {
+          "Number": 1,
+          "Course": "Advanced OOP Concepts",
+          "Topics": [
+            "Metaprogramming",
+            "Reflection",
+            "Dynamic Class Loading"
+          ]
+        },
+        {
+          "Number": 2,
+          "Course": "UML and Design Modelling",
+          "Topics": [
+            "Unified Modeling Language (UML) Basics",
+            "Use Case Diagrams",
+            "Class Diagrams and Sequence Diagrams"
+          ]
+        }
+      ]
+    }
+  }
+  
