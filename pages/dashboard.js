@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import CoursesPage from '../components/courses';
 import {
   LineChart,
   Line,
@@ -129,6 +130,14 @@ const Dashboard = ({user}) => {
           >
             Mentoring
           </li>
+          <li
+            className={`cursor-pointer py-2 ${
+              selectedSection === 'Courses' ? 'text-yellow-400' : ''
+            }`}
+            onClick={() => setSelectedSection('Courses')}
+          >
+            Courses
+          </li>
         </ul>
       </div>
 
@@ -218,6 +227,9 @@ const Dashboard = ({user}) => {
         )}
         {selectedSection === 'Mentoring' && (
           <Mentoring/>
+        )}
+         {selectedSection === 'Courses' && (
+          <CoursesPage/>
         )}
       </div>
     </div>
