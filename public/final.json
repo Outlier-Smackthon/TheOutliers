@@ -1,0 +1,210 @@
+{
+    "Engineering_Computer_Science": [
+      {
+        "level": "Beginner",
+        "questions": [
+          {
+            "question": "What is the time complexity of binary search in a sorted array?",
+            "options": ["O(n)", "O(n log n)", "O(log n)", "O(1)"],
+            "answer": "O(log n)"
+          },
+          {
+            "question": "Which data structure uses FIFO (First In, First Out) principle?",
+            "options": ["Stack", "Queue", "Linked List", "Tree"],
+            "answer": "Queue"
+          },
+          {
+            "question": "What does CPU stand for?",
+            "options": ["Central Process Unit", "Central Processing Unit", "Central Print Unit", "Control Processing Unit"],
+            "answer": "Central Processing Unit"
+          },
+          {
+            "question": "Which of the following is not an operating system?",
+            "options": ["Windows", "Linux", "Oracle", "macOS"],
+            "answer": "Oracle"
+          },
+          {
+            "question": "In C programming, which symbol is used to indicate a comment?",
+            "options": ["//", "/*", "<!--", "#"],
+            "answer": "//"
+          },
+          {
+            "question": "Which of the following is a programming language?",
+            "options": ["HTML", "CSS", "JavaScript", "HTTP"],
+            "answer": "JavaScript"
+          },
+          {
+            "question": "What is the main function of the ALU in a computer?",
+            "options": ["Store data", "Perform arithmetic and logical operations", "Control computer peripherals", "Manage memory"],
+            "answer": "Perform arithmetic and logical operations"
+          },
+          {
+            "question": "Which protocol is used to send email?",
+            "options": ["HTTP", "FTP", "SMTP", "IMAP"],
+            "answer": "SMTP"
+          },
+          {
+            "question": "Which of the following is an example of an input device?",
+            "options": ["Monitor", "Keyboard", "Printer", "Speaker"],
+            "answer": "Keyboard"
+          },
+          {
+            "question": "What is the output of 2 + 2 in most programming languages?",
+            "options": ["22", "4", "8", "2+2"],
+            "answer": "4"
+          }
+        ]
+      },
+      {
+        "level": "Moderate",
+        "questions": [
+          {
+            "question": "Which algorithm is used to find the shortest path in a graph?",
+            "options": ["Bubble Sort", "Dijkstra's Algorithm", "Merge Sort", "Binary Search"],
+            "answer": "Dijkstra's Algorithm"
+          },
+          {
+            "question": "In a relational database, what does SQL stand for?",
+            "options": ["Structured Query Language", "Simple Query Language", "Sequential Query Language", "Standard Query Language"],
+            "answer": "Structured Query Language"
+          },
+          {
+            "question": "What is the purpose of a foreign key in a database?",
+            "options": ["To uniquely identify a row", "To link two tables", "To define a column constraint", "To store large text data"],
+            "answer": "To link two tables"
+          },
+          {
+            "question": "What is the time complexity of merge sort?",
+            "options": ["O(n)", "O(n log n)", "O(n^2)", "O(log n)"],
+            "answer": "O(n log n)"
+          },
+          {
+            "question": "What does API stand for?",
+            "options": ["Application Performance Interface", "Application Programming Interface", "Application Process Interface", "Application Program Interface"],
+            "answer": "Application Programming Interface"
+          },
+          {
+            "question": "Which data structure is best for implementing a LIFO (Last In, First Out) order?",
+            "options": ["Queue", "Stack", "Array", "Tree"],
+            "answer": "Stack"
+          },
+          {
+            "question": "What is a linked list?",
+            "options": ["A type of array", "A data structure where elements point to the next element", "A sorting algorithm", "A memory management technique"],
+            "answer": "A data structure where elements point to the next element"
+          },
+          {
+            "question": "Which of the following is not a type of database management system?",
+            "options": ["Relational", "Hierarchical", "Network", "Sequential"],
+            "answer": "Sequential"
+          },
+          {
+            "question": "What is the primary use of a hash table?",
+            "options": ["Sorting", "Storing key-value pairs", "Binary Search", "Graph traversal"],
+            "answer": "Storing key-value pairs"
+          },
+          {
+            "question": "What is the main advantage of using a database index?",
+            "options": ["Increased storage space", "Faster data retrieval", "Easier data modification", "Improved data security"],
+            "answer": "Faster data retrieval"
+          }
+        ]
+      },
+      {
+        "level": "Expert",
+        "questions": [
+          {
+            "question": "What is the Big-O notation for the best-case performance of the QuickSort algorithm?",
+            "options": ["O(n^2)", "O(n log n)", "O(n)", "O(log n)"],
+            "answer": "O(n log n)"
+          },
+          {
+            "question": "Which of the following is a key characteristic of a NoSQL database?",
+            "options": ["Table-based", "SQL-compliant", "Schema-less", "Supports ACID transactions"],
+            "answer": "Schema-less"
+          },
+          {
+            "question": "In the context of operating systems, what is a 'race condition'?",
+            "options": [
+              "A situation where two processes wait for each other",
+              "A scenario where two processes access shared data simultaneously",
+              "A condition where a process runs faster than others",
+              "A situation where the CPU runs out of resources"
+            ],
+            "answer": "A scenario where two processes access shared data simultaneously"
+          },
+          {
+            "question": "What is the purpose of the ACID properties in database management?",
+            "options": [
+              "To ensure data integrity",
+              "To improve database performance",
+              "To increase storage capacity",
+              "To provide user access control"
+            ],
+            "answer": "To ensure data integrity"
+          },
+          {
+            "question": "What is the primary difference between a process and a thread?",
+            "options": [
+              "Processes share memory, threads do not",
+              "Threads share memory, processes do not",
+              "Processes execute faster than threads",
+              "Threads can run on multiple CPUs, processes cannot"
+            ],
+            "answer": "Threads share memory, processes do not"
+          },
+          {
+            "question": "What is the role of a hypervisor in virtualization?",
+            "options": [
+              "To manage memory allocation",
+              "To control the hardware resources for virtual machines",
+              "To monitor network traffic",
+              "To provide security for virtual machines"
+            ],
+            "answer": "To control the hardware resources for virtual machines"
+          },
+          {
+            "question": "Which of the following algorithms is used to detect deadlocks in an operating system?",
+            "options": [
+              "Banker's Algorithm",
+              "Dijkstra's Algorithm",
+              "Kruskal's Algorithm",
+              "A* Algorithm"
+            ],
+            "answer": "Banker's Algorithm"
+          },
+          {
+            "question": "What is the main purpose of a load balancer in a distributed system?",
+            "options": [
+              "To improve data storage",
+              "To evenly distribute network traffic",
+              "To manage user authentication",
+              "To increase data security"
+            ],
+            "answer": "To evenly distribute network traffic"
+          },
+          {
+            "question": "What does the CAP theorem state in distributed systems?",
+            "options": [
+              "A system can achieve consistency, availability, and partition tolerance simultaneously",
+              "A system can achieve only two out of consistency, availability, and partition tolerance",
+              "A system can only achieve consistency and availability",
+              "A system can only achieve availability and partition tolerance"
+            ],
+            "answer": "A system can achieve only two out of consistency, availability, and partition tolerance"
+          },
+          {
+            "question": "Which of the following is an NP-complete problem?",
+            "options": [
+              "Sorting a list",
+              "Finding the shortest path in a graph",
+              "Traveling Salesman Problem",
+              "Binary Search"
+            ],
+            "answer": "Traveling Salesman Problem"
+          }
+        ]
+      }
+    ]
+  }
+  

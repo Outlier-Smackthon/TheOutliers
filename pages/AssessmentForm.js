@@ -18,6 +18,7 @@ const AssessmentForm = ({ user }) => {
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [details, setDetails] = useState({})
+  const [aiResponse, setAiResponse] = useState('');
 
   const shuffleArray = (array) => array.sort(() => Math.random() - 0.5);
 
@@ -169,9 +170,6 @@ const AssessmentForm = ({ user }) => {
     if(a.success){
       setDetails({name:a.name, currentLevel: a.currentLevel, subject:a.subject, strengths: a.strengths, weaknesses:a.weaknesses, days:a.days});
       const prompt = `Give course recommendation for ${a.name} having ${a.currentLevel} as level in subject ${a.subject} and has scored ${a.score} outof 5. ${a.name} has strengths like ${a.strengths} and weaknesses such as ${a.weaknesses} and wants to complete the course in ${a.days} days.`;
-    
-    
-      console.log(prompt);
   
       setLoading(true);
       setError(null);
@@ -180,8 +178,8 @@ const AssessmentForm = ({ user }) => {
       try {
         const result = await model.generateContent(prompt);
         const responseText = result.response.text();
-  
-        console.log(responseText);
+        setAiResponse(responseText)
+        
       } catch (error) {
         console.log('Something went wrong. Please try again.');
       } finally {
@@ -302,6 +300,21 @@ const AssessmentForm = ({ user }) => {
                 <p className="text-gray-600">No courses available</p>
               )}
             </motion.div>
+            {aiResponse && (
+              <motion.div
+                className="mt-8 p-4 bg-gray-100 rounded-lg shadow-md border border-gray-300"
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+              >
+                <h3 className="text-xl font-semibold text-blue-700 mb-4">
+                  AI-Generated Course Recommendation:
+                </h3>
+                <p className="text-gray-700 whitespace-pre-line">
+                  {aiResponse}
+                </p>
+              </motion.div>
+            )}
           </div>
         )}
       </motion.div>

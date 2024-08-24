@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import CoursesPage from '../components/courses';
+import FinalAssessment from '../components/finalAssement'
 import {
   LineChart,
   Line,
@@ -106,7 +107,7 @@ const Dashboard = ({user}) => {
       <div className="w-1/5 bg-gray-900 text-white p-4 mt-5 mb-7 rounded-xl">
         <ul>
           <li
-            className={`cursor-pointer py-2 ${
+            className={`cursor-pointer py-2 text-lg font-bold ${
               selectedSection === 'Profile' ? 'text-yellow-400' : ''
             }`}
             onClick={() => setSelectedSection('Profile')}
@@ -114,7 +115,7 @@ const Dashboard = ({user}) => {
             Profile
           </li>
           <li
-            className={`cursor-pointer py-2 ${
+            className={`cursor-pointer py-2 text-lg font-bold ${
               selectedSection === 'Pathway' ? 'text-yellow-400' : ''
             }`}
             onClick={() => setSelectedSection('Pathway')}
@@ -123,7 +124,7 @@ const Dashboard = ({user}) => {
           </li>
           {/* Add more sections here if needed */}
           <li
-            className={`cursor-pointer py-2 ${
+            className={`cursor-pointer py-2 text-lg font-bold${
               selectedSection === 'Mentoring' ? 'text-yellow-400' : ''
             }`}
             onClick={() => setSelectedSection('Mentoring')}
@@ -131,12 +132,20 @@ const Dashboard = ({user}) => {
             Mentoring
           </li>
           <li
-            className={`cursor-pointer py-2 ${
+            className={`cursor-pointer py-2 text-lg font-bold ${
               selectedSection === 'Courses' ? 'text-yellow-400' : ''
             }`}
             onClick={() => setSelectedSection('Courses')}
           >
             Courses
+          </li>
+          <li
+            className={`cursor-pointer py-2 text-lg font-bold ${
+              selectedSection === 'Final' ? 'text-yellow-400' : ''
+            }`}
+            onClick={() => setSelectedSection('Final')}
+          >
+            Final Assessment
           </li>
         </ul>
       </div>
@@ -230,6 +239,9 @@ const Dashboard = ({user}) => {
         )}
          {selectedSection === 'Courses' && (
           <CoursesPage/>
+        )}
+         {selectedSection === 'Final' && (
+          <FinalAssessment/>
         )}
       </div>
     </div>

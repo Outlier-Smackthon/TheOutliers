@@ -348,6 +348,7 @@ const Input = ({ user }) => {
   };
 
   return (
+    <div className="py-5">
     <motion.div
       className="w-3/4 mx-auto p-6 bg-white shadow-lg rounded-lg"
       initial={{ opacity: 0, y: 50 }}
@@ -511,6 +512,7 @@ const Input = ({ user }) => {
         </div>
       </form>
     </motion.div>
+    </div>
   );
 };
 
