@@ -378,7 +378,7 @@ const Input = ({ user }) => {
             <option></option>
             <option>Aptitude</option>
             <option>DSA</option>
-            <option>OOPS</option>
+            <option>OOP</option>
             <option>Computer Science</option>
           </select>
         </div>

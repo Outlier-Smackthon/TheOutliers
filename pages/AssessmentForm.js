@@ -2,6 +2,7 @@
 // import { useEffect, useState } from 'react';
 // import { motion } from 'framer-motion';
 // import { ToastContainer, toast } from 'react-toastify';
+// import Link from 'next/link';
 // import 'react-toastify/dist/ReactToastify.css';
 
 // const AssessmentForm = ({ user }) => {
@@ -225,31 +226,27 @@
 //               Your Score: {score} / 5
 //             </motion.h2>
 //             <motion.div
-//               className="mt-8"
+//               className="mt-8 space-y-6"
 //               initial={{ opacity: 0 }}
 //               animate={{ opacity: 1 }}
 //               transition={{ delay: 0.5, duration: 0.5 }}
 //             >
-//               <h2 className="text-xl font-bold mb-2">Recommended Topics To Study</h2>
+//               <h2 className="text-xl font-bold mb-4 text-gray-800">Recommended Topics To Study</h2>
 //               {courses.length ? (
 //                 courses.map((course, index) => (
 //                   <div
 //                     key={index}
-//                     className="mb-4 p-4 bg-gray-100 rounded-lg shadow-md"
+//                     className="mb-4 p-6 bg-gradient-to-br from-indigo-100 to-indigo-200 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
 //                   >
-//                     <h3 className="text-lg font-semibold text-gray-800">
-//                       {course.Course}
-//                     </h3>
-//                     <ul className="list-disc ml-6 text-gray-700">
-//                       {course.Topics.map((topic, idx) => (
-//                         <li key={idx}>{topic}</li>
-//                       ))}
-//                     </ul>
+//                     <h3 className="text-lg font-semibold text-indigo-800 mb-2">{course.Course}</h3>
+//                     <p className="text-gray-700">{course.Topics.join(', ')}</p>
 //                   </div>
 //                 ))
+                
 //               ) : (
 //                 <p className="text-gray-600">No courses available</p>
 //               )}
+              
 //             </motion.div>
 //           </div>
 //         )}
@@ -261,10 +258,12 @@
 // export default AssessmentForm;
 
 
+
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { ToastContainer, toast } from 'react-toastify';
+import Link from 'next/link';
 import 'react-toastify/dist/ReactToastify.css';
 
 const AssessmentForm = ({ user }) => {
@@ -382,8 +381,8 @@ const AssessmentForm = ({ user }) => {
         position: "bottom-center",
         autoClose: 2000,
         hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
+        closeOnClick,
+        pauseOnHover,
         draggable: true,
         progress: undefined,
         theme: "light",
@@ -502,6 +501,12 @@ const AssessmentForm = ({ user }) => {
                   >
                     <h3 className="text-lg font-semibold text-indigo-800 mb-2">{course.Course}</h3>
                     <p className="text-gray-700">{course.Topics.join(', ')}</p>
+                    <Link 
+                      className="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-4 block" 
+                      href="/dashboard"
+                    >
+                      Dashboard
+                    </Link>
                   </div>
                 ))
               ) : (

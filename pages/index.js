@@ -155,26 +155,25 @@ export default function Home() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
           >
-            <h1 className="text-3xl md:text-5xl p-2 text-yellow-300 tracking-loose">
+            <h1 className="text-3xl md:text-5xl pb-2 text-black font-bold tracking-loose">
               Gurukul
             </h1>
-            <h2 className="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2">
-              Space : The Timeless Infinity
+            <h2 className="text-3xl text-black md:text-4xl leading-relaxed md:leading-snug mb-2">
+              Explore. Learn. Conquer.
             </h2>
-            <p className="text-sm md:text-base text-gray-50 mb-4">
-              Explore your favourite events and register now to showcase your
-              talent and win exciting prizes.
+            <p className="text-sm md:text-base text-black mb-4">
+            Step into the world of GURUKUL, where learning is more than just acquiring knowledge—it`s about building a future. Start your journey with us and unlock your true potential.
             </p>
-            <div className="space-x-3">
+            <div className="space-x-3 mt-4">
             <Link
               href="/prequiz"
-              className="bg-transparent hover:bg-yellow-300 text-black hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent"
+              className="bg-transparent hover:bg-yellow-300 text-black rounded shadow hover:shadow-lg py-2 px-4 border border-black hover:border-transparent"
             >
               Get Started
             </Link>
             <Link
               href="/dashboard"
-              className="bg-transparent hover:bg-yellow-300 text-black hover:text-black rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent"
+              className="bg-transparent hover:bg-yellow-300 text-black rounded shadow hover:shadow-lg py-2 px-4 border border-black hover:border-transparent"
             >
               Continue Learning
             </Link>
