@@ -43,7 +43,7 @@ const mentoring = () => {
               <h3 className="mt-4 text-sm text-gray-700">{teacher.name}</h3>
               <p className="mt-1 text-lg font-medium text-gray-900">{teacher.subject}</p>
               <button className="mt-4 w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">
-                <Link href={"http://localhost:8080/videoSession"} >Book a Slot</Link>
+                <Link href={"http://127.0.0.1:8080/"} >Book a Slot</Link>
               </button>
             </div>
           ))}

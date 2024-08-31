@@ -1,6 +1,28 @@
-const APP_ID = "8236ce5d0fff419c97e8f467dd2d8f5a"
-const TOKEN = "007eJxTYPgo7W6ySPn9lqA3qS7SMUKbbus82vDIUJ67Y77zyRqjC04KDBZGxmbJqaYpBmlpaSaGlsmW5qkWaSZm5ikpRikWaaaJO2aeSGsIZGR4yurOysgAgSA+C0NuYmYeAwMALZMfXg=="
-const CHANNEL = "main"
+
+
+/**
+ * Make config.js in folder videoSession
+ * and add the following code:
+ * const config = {
+    NEXT_PUBLIC_APP_ID: "your_app_id",
+    NEXT_PUBLIC_TOKEN : "your_token",
+    NEXT_PUBLIC_CHANNEL : "your_channel",
+};
+
+ */
+const APP_ID = config.NEXT_PUBLIC_APP_ID;
+const TOKEN = config.NEXT_PUBLIC_TOKEN;
+const CHANNEL = config.NEXT_PUBLIC_CHANNEL;
+
+
+
+
+
+
+console.log("APP_ID:", APP_ID);
+console.log("TOKEN:", TOKEN);
+console.log("CHANNEL:", CHANNEL);
+
 
 const client = AgoraRTC.createClient({mode:'rtc', codec:'vp8'})
 
