@@ -145,9 +145,12 @@ npm install --global yarn
 
 
 
-</details>## Screenshots & Videos
+</details>
+
+
+## Screenshots & Videos
 <details>
-  <summary>Click to view screenshots and videos</summary>
+  <summary>Click to view screenshots</summary>
 
   ## Screenshots
 
@@ -206,5 +209,22 @@ npm install --global yarn
   *Discuss Forum*
   ![Follow Up](Screenshot/21.png)
   *Follow Up*
+
+</details>
+
+
+## Demo
+<details>
+  <summary>Click to view videos</summary>
+  
+  (https://youtu.be/EtVBo7aeiB0)
+
+  
+  **Full Project Demo**
+  
+  (https://youtu.be/ucak3E7W08c)
+  
+  ** Sample Live Streaming Demo **
+
 
 </details>
