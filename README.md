@@ -224,7 +224,7 @@ npm install --global yarn
   
   (https://youtu.be/ucak3E7W08c)
   
-  ** Sample Live Streaming Demo **
+  **Sample Live Streaming Demo**
 
 
 </details>
