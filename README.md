@@ -1,4 +1,4 @@
-# Team Outliers
+# Team Outliers (<a href="https://smakathon-gurukul.vercel.app/">Deployed Link</a>)
 
 
 
