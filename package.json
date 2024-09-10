@@ -5,7 +5,7 @@
   "scripts": {
     "one": "next dev",
     "live-server": "live-server --port=8080 --no-browser ./videoSession",
-    "dev": "concurrently \"npm run one\" \"npm run live-server\"",
+    "dev": "npm run one",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
