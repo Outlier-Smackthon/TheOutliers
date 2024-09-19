@@ -151,8 +151,8 @@ const AssessmentForm = ({ user }) => {
       </motion.div>
     );
   }
-
-    const genAI = new GoogleGenerativeAI("AIzaSyAqcNNQ6YBfhUvfYoIRmQ8GgE6KwxG0umw");
+  const API_KEY = process.env.NEXT_PUBLIC_API_KEY
+  const genAI = new GoogleGenerativeAI(API_KEY);
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
     
